@@ -18,7 +18,7 @@ public class CharacterEncodingFilter implements Filter {
 			throws IOException, ServletException {
 
 		// 사전작업 doFilter 이전
-		System.out.println("before filter");
+		//System.out.println("before filter");
 		request.setCharacterEncoding("UTF-8"); // request body 데이터의 인코딩 방식 설정
 		response.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html; charset=UTF-8");
@@ -26,7 +26,7 @@ public class CharacterEncodingFilter implements Filter {
 		chain.doFilter(request, response); // 제어 설정
 
 		// 사후작업 doFilter 이후
-		System.out.println("after filter");
+		//System.out.println("after filter");
 	}
 
 }
