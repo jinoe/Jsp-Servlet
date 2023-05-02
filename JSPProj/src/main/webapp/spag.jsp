@@ -7,6 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%=request.getAttribute("result") %> 입니다.
+	<%-- <%=request.getAttribute("result") %> 입니다. --%>
+	${result} 입니다.<br/>
+	${param }<br/>
+	${paramValues }<br/>
+	${header.host }<br/>
+	${cookie }
 </body>
 </html>
