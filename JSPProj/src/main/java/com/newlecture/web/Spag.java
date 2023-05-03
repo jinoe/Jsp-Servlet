@@ -26,7 +26,7 @@ public class Spag extends HttpServlet {
 		
 		//forward 방법
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/spag.jsp");
-		request.setAttribute("result", result);
+		request.setAttribute("result", result);	
 		dispatcher.forward(request, response);
 	}
 }

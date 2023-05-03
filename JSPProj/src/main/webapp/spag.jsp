@@ -12,6 +12,10 @@
 	${param }<br/>
 	${paramValues }<br/>
 	${header.host }<br/>
-	${cookie }
+	${cookie }<br/>
+	${param.n == 2?"정답":"오답"}<br/>
+	${empty param.n?"비어있음":"비어있지 않음"}<br/>
+	${3 gt 3 }
+	
 </body>
 </html>
